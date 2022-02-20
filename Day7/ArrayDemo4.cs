@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace ConsoleDemoApp.Day7
 {
     //Implementation of IComparable interface
-    class Product :IComparable<Product>
+    class Product //:IComparable<Product>
     {
         //data field
         int _Pid;
@@ -25,12 +25,12 @@ namespace ConsoleDemoApp.Day7
 
         public string Brand { get => _Brand; set => _Brand = value; }
 
-        public int CompareTo(Product other)
-        {
-            //return this._Pid.CompareTo(other._Pid); // will get ascending order of data >1,<1,==0
-            return other._Pid.CompareTo(this._Pid); //dscending order
+        //public int CompareTo(Product other)
+        //{
+        //    //return this._Pid.CompareTo(other._Pid); // will get ascending order of data >1,<1,==0
+        //    return other._Pid.CompareTo(this._Pid); //dscending order
 
-        }
+        //}
          //public int Pid
         //{
         //    //explicit Properties
@@ -77,6 +77,63 @@ namespace ConsoleDemoApp.Day7
     //}
 
 
+    enum SortBy
+    {
+        ID, //variable Default 0
+        Name,//variable Name=1- explicitive form,Name=6- implicitive 1
+        Price,
+        Brand
+    }
+    //Generic comparator jismai sab call ho jaye
+    class MyComparer : IComparer<Product>
+    {
+        bool _IsDesc;
+        SortBy _sortBy;
+
+        public MyComparer(SortBy _sortBy=SortBy.ID,bool _IsDesc = false)//or we can use properties. Default 
+            //value is id
+        {
+            this._sortBy = _sortBy;
+            this._IsDesc = _IsDesc;
+        }
+        public int Compare(Product x,Product y)
+        {
+            int result = 0;
+            switch (_sortBy)
+            {
+                case SortBy.ID:
+                    if (!_IsDesc)
+                        result = x.Pid.CompareTo(y.Pid);//Asc
+                    else
+                        result = y.Pid.CompareTo(x.Pid);//DEC
+                    break;
+                case SortBy.Name:
+                    if (!_IsDesc)
+                        result = x.Name.CompareTo(y.Name);
+                    else
+                        result = y.Name.CompareTo(x.Name);
+                    break;
+                case SortBy.Price:
+                    if (!_IsDesc)
+                        result = x.Price.CompareTo(y.Price);
+                    else
+                        result = y.Price.CompareTo(x.Price);
+                    break;
+                case SortBy.Brand:
+                    if (!_IsDesc)
+                        result = x.Brand.CompareTo(y.Brand);
+                    else
+                        result = y.Brand.CompareTo(x.Brand);
+                    break;
+                default:
+                    break;
+            }
+            return result;
+
+        }
+    }
+
+
     internal class ArrayDemo4
     {
         static void Main(string[] args)
@@ -94,24 +151,34 @@ namespace ConsoleDemoApp.Day7
                 Console.WriteLine(product);
             }
 
-            Array.Sort(products);//will sort data by id
+            //Array.Sort(products);//will sort data by id
 
-            Console.WriteLine("Sorted Products Details");
-            foreach (Product product in products)
-            {
-                Console.WriteLine(product);
-            }
+            //Console.WriteLine("Sorted Products Details");
+            //foreach (Product product in products)
+            //{
+            //    Console.WriteLine(product);
+            //}
 
-            Array.Sort(products,new SortByNameComparer());//will sort data by Name //
-            Console.WriteLine("Product Detail by name Display");
-            foreach (Product product in products)
-            {
-                Console.WriteLine(product);
-            }
+            //Array.Sort(products,new SortByNameComparer());//will sort data by Name //
+            //Console.WriteLine("Product Detail by name Display");
+            //foreach (Product product in products)
+            //{
+            //    Console.WriteLine(product);
+            //}
 
-            //Array.Sort(products, new SortByNameComparer());//will sort data by Name //
-            Array.Sort(products, new SortByPriceComparer(true));//will sort data by Price in desc
-            Console.WriteLine("Product Detail by Price Display");
+            ////Array.Sort(products, new SortByNameComparer());//will sort data by Name //
+            //Array.Sort(products, new SortByPriceComparer(true));//will sort data by Price in desc
+            //Console.WriteLine("Product Detail by Price Display");
+            //foreach (Product product in products)
+            //{
+            //    Console.WriteLine(product);
+            //}
+
+            //Array.Sort(products, new MyComparer());//in only one method
+            //Array.Sort(products, new MyComparer(_IsDesc:true));
+            // Array.Sort(products, new MyComparer(SortBy.Name));
+            Array.Sort(products, new MyComparer(SortBy.Name,true));
+            Console.WriteLine("Sorted Product Display");
             foreach (Product product in products)
             {
                 Console.WriteLine(product);
