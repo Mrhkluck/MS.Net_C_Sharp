@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConsoleDemoApp.Day7.StringDemo</StartupObject>
+    <StartupObject>ConsoleDemoApp.Day8.StringDemo</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -59,6 +59,10 @@
     <Compile Include="Day7\ArrayDemo3.cs" />
     <Compile Include="Day7\ArrayDemo4.cs" />
     <Compile Include="Day7\StringDemo.cs" />
+    <Compile Include="Day8\DateTimeDemo.cs" />
+    <Compile Include="Day8\IndexersDemo.cs" />
+    <Compile Include="Day8\StringBuilderDemo.cs" />
+    <Compile Include="Day8\StringDemo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Second.cs" />
