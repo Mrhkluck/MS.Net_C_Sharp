@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,7 +34,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConsoleDemoApp.Inheritance.InheritanceDemo4</StartupObject>
+    <StartupObject>ConsoleDemoApp.Interface.InterfaceDemo1</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -63,10 +64,13 @@
     <Compile Include="Day8\IndexersDemo.cs" />
     <Compile Include="Day8\StringBuilderDemo.cs" />
     <Compile Include="Day8\StringDemo.cs" />
+    <Compile Include="DelegateDemo\DelegateDemo1.cs" />
     <Compile Include="Inheritance\InheritanceDemo1.cs" />
     <Compile Include="Inheritance\InheritanceDemo2.cs" />
     <Compile Include="Inheritance\InheritanceDemo3.cs" />
     <Compile Include="Inheritance\InheritanceDemo4.cs" />
+    <Compile Include="Interface\InterfaceDemo1.cs" />
+    <Compile Include="Interface\InterfaceDemo2.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Second.cs" />

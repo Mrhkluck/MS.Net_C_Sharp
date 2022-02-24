@@ -54,7 +54,7 @@ namespace ConsoleDemoApp.Inheritance
         //{
         //    Console.WriteLine("Destructor from Derive1");
         //}
-        public void Display()
+        public new void  Display()
         {
             Console.WriteLine("Display from Derive-1");
         }
@@ -84,7 +84,7 @@ namespace ConsoleDemoApp.Inheritance
         //{
         //    Console.WriteLine("Destructor from Derive2");
         //}
-        public void Display()
+        public  void Display()
         {
             Console.WriteLine("Display from Derive-2");
         }
