@@ -34,7 +34,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConsoleDemoApp.Interface.InterfaceDemo1</StartupObject>
+    <StartupObject>ConsoleDemoApp.DelegateDemo.EventDemo1</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -65,6 +65,9 @@
     <Compile Include="Day8\StringBuilderDemo.cs" />
     <Compile Include="Day8\StringDemo.cs" />
     <Compile Include="DelegateDemo\DelegateDemo1.cs" />
+    <Compile Include="DelegateDemo\DelegateDemo2.cs" />
+    <Compile Include="DelegateDemo\DelegateDemo3.cs" />
+    <Compile Include="DelegateDemo\EventDemo1.cs" />
     <Compile Include="Inheritance\InheritanceDemo1.cs" />
     <Compile Include="Inheritance\InheritanceDemo2.cs" />
     <Compile Include="Inheritance\InheritanceDemo3.cs" />
