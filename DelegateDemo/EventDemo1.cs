@@ -15,9 +15,11 @@ namespace ConsoleDemoApp.DelegateDemo
         //Handler method
         static void Message()
         {
-            Console.WriteLine("Uou entered a single digit number");
+            Console.WriteLine("You entered a single digit number");
 
         }
+
+
 
         static void Main(string[] args)
         {

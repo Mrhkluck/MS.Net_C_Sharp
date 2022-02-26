@@ -34,7 +34,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConsoleDemoApp.DelegateDemo.EventDemo1</StartupObject>
+    <StartupObject>ConsoleDemoApp.DelegateDemo.EventDemo2</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -68,12 +68,14 @@
     <Compile Include="DelegateDemo\DelegateDemo2.cs" />
     <Compile Include="DelegateDemo\DelegateDemo3.cs" />
     <Compile Include="DelegateDemo\EventDemo1.cs" />
+    <Compile Include="DelegateDemo\EventDemo2.cs" />
     <Compile Include="Inheritance\InheritanceDemo1.cs" />
     <Compile Include="Inheritance\InheritanceDemo2.cs" />
     <Compile Include="Inheritance\InheritanceDemo3.cs" />
     <Compile Include="Inheritance\InheritanceDemo4.cs" />
     <Compile Include="Interface\InterfaceDemo1.cs" />
     <Compile Include="Interface\InterfaceDemo2.cs" />
+    <Compile Include="NameSpaces\NameSpaceDemo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Second.cs" />
