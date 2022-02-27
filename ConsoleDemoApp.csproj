@@ -34,7 +34,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConsoleDemoApp.DelegateDemo.EventDemo2</StartupObject>
+    <StartupObject>ConsoleDemoApp.MultiThreadExp.ThreadDemo1</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -75,6 +75,8 @@
     <Compile Include="Inheritance\InheritanceDemo4.cs" />
     <Compile Include="Interface\InterfaceDemo1.cs" />
     <Compile Include="Interface\InterfaceDemo2.cs" />
+    <Compile Include="MultiThreadExp\ThreadDemo1.cs" />
+    <Compile Include="MultiThreadExp\ThreadDemo2.cs" />
     <Compile Include="NameSpaces\NameSpaceDemo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
