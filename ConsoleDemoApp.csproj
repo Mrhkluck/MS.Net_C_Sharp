@@ -34,7 +34,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConsoleDemoApp.MultiThreadExp.ThreadDemo1</StartupObject>
+    <StartupObject>ConsoleDemoApp.MultiThreadExp.ParallelForEachDemo</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -75,8 +75,12 @@
     <Compile Include="Inheritance\InheritanceDemo4.cs" />
     <Compile Include="Interface\InterfaceDemo1.cs" />
     <Compile Include="Interface\InterfaceDemo2.cs" />
+    <Compile Include="MultiThreadExp\ParallelForEachDemo.cs" />
+    <Compile Include="MultiThreadExp\TaskUsingForLoop.cs" />
+    <Compile Include="MultiThreadExp\TaskUsingParallelForLoop.cs" />
     <Compile Include="MultiThreadExp\ThreadDemo1.cs" />
     <Compile Include="MultiThreadExp\ThreadDemo2.cs" />
+    <Compile Include="MultiThreadExp\ThreadDemo3.cs" />
     <Compile Include="NameSpaces\NameSpaceDemo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
