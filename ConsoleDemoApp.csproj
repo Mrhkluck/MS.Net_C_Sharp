@@ -34,7 +34,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConsoleDemoApp.MultiThreadExp.ParallelForEachDemo</StartupObject>
+    <StartupObject>ConsoleDemoApp.LinqExp.HashTableDemo</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -75,6 +75,13 @@
     <Compile Include="Inheritance\InheritanceDemo4.cs" />
     <Compile Include="Interface\InterfaceDemo1.cs" />
     <Compile Include="Interface\InterfaceDemo2.cs" />
+    <Compile Include="LinqExp\ArrayListDemo.cs" />
+    <Compile Include="LinqExp\ArrayListDemo2.cs" />
+    <Compile Include="LinqExp\HashTableDemo.cs" />
+    <Compile Include="LinqExp\LinqDemo1.cs" />
+    <Compile Include="LinqExp\LinqDemo2.cs" />
+    <Compile Include="LinqExp\LinqDemo3.cs" />
+    <Compile Include="LinqExp\StateCity.cs" />
     <Compile Include="MultiThreadExp\ParallelForEachDemo.cs" />
     <Compile Include="MultiThreadExp\TaskUsingForLoop.cs" />
     <Compile Include="MultiThreadExp\TaskUsingParallelForLoop.cs" />
